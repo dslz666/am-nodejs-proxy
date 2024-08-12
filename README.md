@@ -1,100 +1,46 @@
-# am-nodejs-proxy
-https://github.com/ansoncloud8/am-nodejs-proxy
+停止更新，暂停仓库, 停止使用仓库
 
-基于 Node.js 的 vless 实现包。它在各种 Node.js 环境中都能运行，包括但不限于：Windows、Linux、MacOS、Android、iOS、树莓派等。同时，它也适用于各种 PaaS 平台，如：replit、heroku 等。
+停止更新，暂停仓库, 停止使用仓库
 
-- [中文文档](./README_CN.md) 
-- [视频教程](https://youtu.be/tj9uD575R80)
+停止更新，暂停仓库, 停止使用仓库
 
-- 官网教程：[AM科技](https://am.809098.xyz)
-- YouTube频道：[@AM_CLUB](https://youtube.com/@AM_CLUB)
-- Telegram交流群：[@AM_CLUBS](https://t.me/AM_CLUBS)
-- 免费订阅：[进群发送关键字: 订阅](https://t.me/AM_CLUBS)
+停止更新，暂停仓库, 停止使用仓库
 
-This README explains how to set up and use the `start.sh` script to manage the project components.
+停止更新，暂停仓库, 停止使用仓库
 
-## Initial Setup
 
-1. Connect to your host using SSH:
+停止更新，暂停仓库, 停止使用仓库
 
-```
-ssh <username>@<panel>.serv00.com
-```
+停止更新，暂停仓库, 停止使用仓库
 
-Use the information emailed to you by serv00.
+停止更新，暂停仓库, 停止使用仓库
 
-2. Enable management permissions:
+停止更新，暂停仓库, 停止使用仓库
 
-```
-devil binexec on
-```
+停止更新，暂停仓库, 停止使用仓库
 
-***AFTER THIS STEP, EXIT FROM SSH AND LOG IN AGAIN.***
 
-3. Clone the repository:
+停止更新，暂停仓库, 停止使用仓库
 
-```
-cd domains/<username>.serv00.net
-git clone https://github.com/ansoncloud8/am-nodejs-proxy.git
-cd am-nodejs-proxy
-```
+停止更新，暂停仓库, 停止使用仓库
 
-## Usage
+停止更新，暂停仓库, 停止使用仓库
 
-To use the script, run:
+停止更新，暂停仓库, 停止使用仓库
 
-```
-./start.sh <action> <sub-action>
-```
+停止更新，暂停仓库, 停止使用仓库
 
-| Action |  Sub-Action   |         Command         |                  Description                   |
-| :----: | :-----------: | :---------------------: | :--------------------------------------------: |
-| setup  |  node/xray/cf   | `./start.sh setup node` |       Setup services in a single command       |
-| check  |  node/xray/cf   | `./start.sh check node` |     Checks Cloudflared and other services      |
-|  show  | node/xray/all | `./start.sh show node`  | Displays VLESS connection links from node/.env |
-|  reset  | all | `./start.sh reset all`  | Reset services in a single command     |
 
-***NODE.JS AND XRAY CANNOT BE ACTIVE SIMULTANEOUSLY. ONLY ONE OF THEM SHOULD BE RUNNING AT A TIME.***
 
-## Checking Sessions
+用途
+该项目被设计和开发仅供学习、研究和安全测试目的。它旨在为安全研究者、学术界人士和技术爱好者提供一个了解和实践网络通信技术的工具。
 
-To check the status of a specific component, you can attach to its tmux session:
+合法性
+使用者在下载和使用该项目时，必须遵守当地法律和规定。使用者有责任确保他们的行为符合其所在地区的法律、规章以及其他适用的规定。
 
-```
-tmux attach -t <session>
-```
-
-Replace `<session>` with:
-
-- `cf` for Cloudflared
-- `node` for Node.js
-- `xray` for Xray
-
-For example, to check the Cloudflared session:
-
-```
-tmux attach -t cf
-```
-
-To detach from a tmux session without closing it, press:
-
-```
-Ctrl + b, then d
-```
-
-This key combination allows you to exit the session while leaving it running in the background.
-
-## Notes
-
-- The script uses tmux to manage sessions for each component.
-- Cron jobs are set up for periodic maintenance of Node.js and Xray.
-- Cloudflared, Node.js, and Xray configurations are generated automatically.
-- The script includes functions for port management and cleanup.
-
- # 
-<details><summary><strong> [点击展开] 赞赏支持 ~🧧</strong></summary>
-*我非常感谢您的赞赏和支持，它们将极大地激励我继续创新，持续产生有价值的工作。*
-  
-- **TRC20:** `TWTxUyay6QJN3K4fs4kvJTT8Zfa2mWTwDD`
-  
-</details>
+免责
+作为该项目的作者，我（以下简称“作者”）强调该项目应仅用于合法、道德和教育目的。
+作者不鼓励、不支持也不促进任何形式的非法使用该项目。如果发现该项目被用于非法或不道德的活动，作者将强烈谴责这种行为。
+作者对任何人或团体使用该项目进行的任何非法活动不承担责任。使用者使用该项目时产生的任何后果由使用者本人承担。
+作者不对使用该项目可能引起的任何直接或间接损害负责。
+通过使用该项目，使用者表示理解并同意本免责声明的所有条款。如果使用者不同意这些条款，应立即停止使用
