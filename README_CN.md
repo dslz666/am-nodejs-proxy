@@ -1,101 +1,46 @@
-# am-nodejs-proxy
-https://github.com/ansoncloud8/am-nodejs-proxy
+停止更新，暂停仓库, 停止使用仓库
 
-基于 Node.js 的 vless 实现包。它在各种 Node.js 环境中都能运行，包括但不限于：Windows、Linux、MacOS、Android、iOS、树莓派等。同时，它也适用于各种 PaaS 平台，如：replit、heroku 等。
+停止更新，暂停仓库, 停止使用仓库
 
-- [中文文档](./README_CN.md) 
-- [视频教程](https://youtu.be/tj9uD575R80)
+停止更新，暂停仓库, 停止使用仓库
 
-- 官网教程：[AM科技](https://am.809098.xyz)
-- YouTube频道：[@AM_CLUB](https://youtube.com/@AM_CLUB)
-- Telegram交流群：[@AM_CLUBS](https://t.me/AM_CLUBS)
-- 免费订阅：[进群发送关键字: 订阅](https://t.me/AM_CLUBS)
+停止更新，暂停仓库, 停止使用仓库
+
+停止更新，暂停仓库, 停止使用仓库
 
 
-本自述文件解释了如何设置和使用“start.sh”脚本来管理项目组件。
+停止更新，暂停仓库, 停止使用仓库
 
-## 初始设置
+停止更新，暂停仓库, 停止使用仓库
 
-1. 使用 SSH 连接到您的主机：
+停止更新，暂停仓库, 停止使用仓库
 
-```
-ssh <username>@<panel>.serv00.com
-```
+停止更新，暂停仓库, 停止使用仓库
 
-使用 serv00 通过电子邮件发送给您的信息。
+停止更新，暂停仓库, 停止使用仓库
 
-2. 启用管理权限：
 
-```
-devil binexec on
-```
+停止更新，暂停仓库, 停止使用仓库
 
-***完成此步骤后，退出 SSH 并再次登录。***
+停止更新，暂停仓库, 停止使用仓库
 
-3. 克隆仓库代码：
+停止更新，暂停仓库, 停止使用仓库
 
-```
-cd domains/<username>.serv00.net
-git clone https://github.com/ansoncloud8/am-nodejs-proxy.git
-cd am-nodejs-proxy
-```
+停止更新，暂停仓库, 停止使用仓库
 
-## 使用
+停止更新，暂停仓库, 停止使用仓库
 
-要使用该脚本，请运行：
 
-```
-./start.sh <action> <sub-action>
-```
 
-| Action |  Sub-Action   |         Command         |                  Description                   |
-| :----: | :-----------: | :---------------------: | :--------------------------------------------: |
-| setup  |   node/xray/cf   | `./start.sh setup node` |      通过单个命令设置服务       |
-| check  |   node/xray/cf   | `./start.sh check node` |    检查 Cloudflared 和其他服务      |
-|  show  | node/xray/all | `./start.sh show node`  | 显示来自 node/.env 的 VLESS 连接链接 |
-|  reset  | all | `./start.sh reset all`  | 通过单个命令重置停止服务    |
+用途
+该项目被设计和开发仅供学习、研究和安全测试目的。它旨在为安全研究者、学术界人士和技术爱好者提供一个了解和实践网络通信技术的工具。
 
-***NODE.JS 和 XRAY 不能同时处于活动状态。一次只能运行其中一个。***
+合法性
+使用者在下载和使用该项目时，必须遵守当地法律和规定。使用者有责任确保他们的行为符合其所在地区的法律、规章以及其他适用的规定。
 
-## 检查会话
-
-要检查特定组件的状态，您可以附加到其 tmux 会话：
-
-```
-tmux attach -t <session>
-```
-
-将 `<session>` 替换为：
-
-- `cf` for Cloudflared
-- `node` for Node.js
-- `xray` for Xray
-
-例如，要检查 Cloudflared 会话：
-
-```
-tmux attach -t cf
-```
-
-要从 tmux 会话分离而不关闭它，请按：
-
-```
-Ctrl + b, 然后是 d
-```
-
-此组合键允许您退出会话，同时使其在后台运行。
-
-## Notes
-
-- 该脚本使用 tmux 来管理每个组件的会话。
-- 设置 Cron 作业用于定期维护 Node.js 和 Xray。
-- Cloudflared、Node.js 和 Xray 配置自动生成。
-- 该脚本包括端口管理和清理功能。
-
- # 
-<details><summary><strong> [点击展开] 赞赏支持 ~🧧</strong></summary>
-*我非常感谢您的赞赏和支持，它们将极大地激励我继续创新，持续产生有价值的工作。*
-  
-- **TRC20:** `TWTxUyay6QJN3K4fs4kvJTT8Zfa2mWTwDD`
-  
-</details>
+免责
+作为该项目的作者，我（以下简称“作者”）强调该项目应仅用于合法、道德和教育目的。
+作者不鼓励、不支持也不促进任何形式的非法使用该项目。如果发现该项目被用于非法或不道德的活动，作者将强烈谴责这种行为。
+作者对任何人或团体使用该项目进行的任何非法活动不承担责任。使用者使用该项目时产生的任何后果由使用者本人承担。
+作者不对使用该项目可能引起的任何直接或间接损害负责。
+通过使用该项目，使用者表示理解并同意本免责声明的所有条款。如果使用者不同意这些条款，应立即停止使用
